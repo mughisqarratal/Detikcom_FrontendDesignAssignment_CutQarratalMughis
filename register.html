@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Register</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400,500,600;700,800&family=Pacifico&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+
+  <!-- navbar -->
+  <nav class="navbar navbar-expand-lg navbar-light">
+    <div class="container">
+      <a class="navbar-brand" href="index.html">
+        <span class="nb1">detikfinance</span>
+        <span class="nb2">BUSINESS PLAN</span>
+        <span class="nb3">COMPETITION 2023</span>
+      </a>
+      <button
+        class="navbar-toggler"
+        type="button"
+        data-toggle="collapse"
+        data-target="#navbarNav"
+        aria-controls="navbarNav"
+        aria-expanded="false"
+        aria-label="Toggle navigation"
+      >
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item">
+            <a class="nav-link" href="#">About</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Mechanism</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Latest Update</a>
+          </li>
+          <li class="nav-item">
+            <a class="btn btn-light" href="register.html">Register</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <section id="hero-register">
+    <div class="hero-register-wave-atas"></div>
+    <div class="hero-register-wave-bawah"></div>
+    <div class="container">
+      <div class="row">
+        <div class="col-12">
+          <h1>Register</h1>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <div id="register">
+    <secion>
+      <div class="container">
+        <div class="row justify-content-center">
+          <div class="col-md-8">
+            <div class="card card-register">
+              <div class="card-body">
+                <form action="" method="">
+                  <div class="form-group">
+                    <input
+                      type="text"
+                      name="nama_perusahaan"
+                      class="form-control"
+                      placeholder="Nama Perusahaan"
+                    />
+                  </div>
+                  <div class="form-group">
+                    <input
+                      type="text"
+                      name="email"
+                      class="form-control"
+                      placeholder="Email"
+                    />
+                  </div>
+                  <div class="form-group">
+                    <input
+                      type="text"
+                      name="nomor_telepon"
+                      class="form-control"
+                      placeholder="Nomor Telepon"
+                    />
+                    <p class="small mt-2 text-muted">Isi Hanya Angka</p>
+                  </div>
+                  <div class="form-group">
+                    <textarea
+                      name="tentang_perusahaan"
+                      id="tentang_perusahaan"
+                      cols="30"
+                      rows="5"
+                      class="form-control"
+                      placeholder="Tentang Perusahaan (Max. 200 character)"
+                    ></textarea>
+                  </div>
+                  <div class="form-group row">
+                    <div class="col-md-5 mb-4">
+                      <div class="card">
+                        <div class="card-body">
+                          <div class="text-center mb-3 mt-3">
+                            <label for="upload_image">
+                              <img
+                                src="image/icon/icon-plus.png"
+                                class="img-fluid"
+                                alt=""
+                              />
+                            </label>
+                          </div>
+                          <p class="text-center small">
+                            Upload File Logo <span class="text-danger">*</span>
+                          </p>
+                          <input type="file" class="d-none" id="upload_image" />
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-md align-self-center">
+                      <ol>
+                        <li>Format file: .png, .jpg, .jpeg</li>
+                        <li>Maksimal ukuran file 200KB</li>
+                        <li>Hindari penggunaan logo berwarna putih</li>
+                        <li>Minimal lebar 300px</li>
+                      </ol>
+                    </div>
+                  </div>
+                  <div class="form-group">
+                    <input
+                      type="file"
+                      name="file_profil"
+                      class="d-none"
+                      id="file_profil"
+                    />
+                    <div class="input-group mb-3">
+                      <input
+                        type="text"
+                        class="form-control"
+                        placeholder="Recipient's username"
+                        aria-label="Recipient's username"
+                        aria-describedby="basic-addon2"
+                      />
+                      <div class="input-group-append">
+                        <label for="file_profil">
+                          <span class="btn btnUploadFile" id="basic-addon2">
+                            Upload File
+                          </span>
+                        </label>
+                      </div>
+                    </div>
+                    <p class="small mt-2 text-muted">
+                      Format file .pdf, maksimal size 20 mb
+                    </p>
+                  </div>
+                  <div class="form-group">
+                    <input
+                      type="text"
+                      name="link_website"
+                      class="form-control"
+                      placeholder="Link Website"
+                    />
+                    <p class="small mt-2 text-muted">
+                      Website, Sosial Media, dll. Sertakan protokol URL
+                      (https:// atau http://).
+                    </p>
+                  </div>
+                  <div class="form-check form-check-inline">
+                    <input
+                      class="form-check-input"
+                      type="checkbox"
+                      id="setuju"
+                      name="setuju"
+                      value="1"
+                    />
+                    <label class="form-check-label" for="setuju"
+                      ><span class="small text-muted"
+                        >Dengan menekan tombol "Daftar", Saya menyetujui syarat
+                        dan ketentuan yang berlaku</span
+                      ></label
+                    >
+                  </div>
+                  <div class="form-group">
+                    <div class="text-center">
+                      <button class="btn btnRegister mt-4 px-5">
+                        Register
+                      </button>
+                    </div>
+                  </div>
+                </form>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </secion>
+  </div>
+
+  <!-- <div class="container-fluid"> -->
+  <footer class="p-4">
+    <div class="row">
+      <div class="col-md-12">
+        <div class="footer-logo">
+          <span class="nb1">detikfinance</span>
+          <span class="nb2">BUSINESS PLAN</span>
+          <span class="nb3">COMPETITION 2023</span>
+        </div>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-md-8">
+        <p class="footer-desc">
+          Detikfinance memberikan ruang kepada para startup di Indonesia untuk
+          menunjukkan, serta mempromosikan brand mereka untuk mendapatkan
+          perhatian dari venture capital atau angel investor
+        </p>
+      </div>
+      <div class="col-md-2"></div>
+
+      <div class="col-md align-self-end">
+        <div class="text-right">
+          <ul class="list-inline">
+            <li class="list-inline-item">
+              <a href="">
+                <img
+                  src="image/icon/footer-twitter.png"
+                  class="img-fluid"
+                  alt=""
+                />
+              </a>
+            </li>
+            <li class="list-inline-item">
+              <a href="">
+                <img
+                  src="image/icon/footer-instagram.png"
+                  class="img-fluid"
+                  alt=""
+                />
+              </a>
+            </li>
+            <li class="list-inline-item">
+              <a href="">
+                <img
+                  src="image/icon/footer-facebook.png"
+                  class="img-fluid"
+                  alt=""
+                />
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <hr class="footer-hr" />
+    <div class="row">
+      <div class="col-md-12">
+        <p class="copyright">&copy; 2023 Detikcom. All rights reserved</p>
+      </div>
+    </div>
+  </footer>
+  <!-- </div> -->
+
+  <body>
+    <script src="js/jquery-3.6.1.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+  </body>
+</html>
