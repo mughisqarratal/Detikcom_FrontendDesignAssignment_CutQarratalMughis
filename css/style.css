@@ -1,0 +1,517 @@
+body {
+  font-family: "Montserrat", sans-serif;
+}
+
+.navbar {
+  background-color: #007cbd;
+  height: 80px;
+}
+.navbar-brand span {
+  color: white;
+  display: block;
+}
+.navbar-brand span.nb1 {
+  font-size: 13px;
+  font-weight: 600;
+}
+.navbar-brand span.nb2 {
+  font-size: 20px;
+  font-weight: bold;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.navbar-brand span.nb3 {
+  font-size: 11px;
+  font-weight: 500;
+  letter-spacing: 4px;
+}
+
+.navbar-nav .nav-item .nav-link {
+  color: white;
+  font-size: 14px;
+  font-family: "Montserrat", sans-serif;
+  padding-right: 25px;
+  padding-left: 25px;
+}
+
+.navbar-nav .nav-item .btn {
+  color: #007cbd;
+  font-size: 14px;
+  font-family: "Montserrat", sans-serif;
+  padding-right: 25px;
+  padding-left: 25px;
+  font-size: 14px;
+  border-radius: 100px;
+  width: 121px;
+  height: 37px;
+}
+
+/* hero */
+#hero {
+  background-image: url("../image/hero.png");
+  /* background: linear-gradient(rgb(62, 199, 243)), url("../image/hero.png"); */
+  height: 1024px;
+  width: 100%;
+  background-size: cover;
+  background-position-x: -140px;
+  background-position-y: -80px;
+  background-repeat: no-repeat;
+  position: relative;
+}
+#hero::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(rgb(62, 199, 243));
+  background-clip: padding-box;
+  z-index: 1;
+}
+
+#hero .bg-wave-atas {
+  background-image: url("../image/wave.png");
+  height: 637px;
+  width: 100%;
+  background-repeat: no-repeat;
+  background-position-y: -78px;
+  background-position-x: -140px;
+  position: absolute;
+}
+
+#hero .bg-wave-bawah {
+  background-image: url("../image/wave2.png");
+  height: 637px;
+  width: 100%;
+  background-repeat: no-repeat;
+  /* background-position-y: 338px;
+  background-position-x: -90px; */
+  position: absolute;
+  bottom: -448px;
+}
+
+#hero .headline {
+  padding-top: 220px;
+  color: white;
+  font-family: "Montserrat", sans-serif;
+}
+
+#hero .headline span {
+  font-size: 24px;
+}
+
+#hero .headline h1 {
+  font-size: 48px;
+  font-weight: 800;
+}
+
+#hero .headline p {
+  font-size: 14px;
+}
+
+#hero .headline a {
+  font-size: 14px;
+  padding: 10px;
+  width: 221px;
+  font-size: 14px;
+  background-color: #3eb7dd !important;
+  color: white;
+}
+#about {
+  padding: 20px;
+  font-family: "Montserrat", sans-serif;
+  padding-bottom: 90px;
+}
+
+/* about */
+#about iframe {
+  height: 220.16px;
+  width: 392px;
+}
+
+#about h3 {
+  font-size: 20px;
+  font-weight: bold;
+  color: #007cbd;
+}
+#about p {
+  font-size: 14px;
+  font-weight: 500;
+  color: #1b1e28;
+}
+
+#about .share {
+  font-weight: 400;
+  color: #007cbd;
+}
+
+#mekanisme {
+  background: linear-gradient(#2095e4, #3ec7f3);
+  padding: 100px;
+  position: relative;
+  font-family: "Montserrat", sans-serif;
+}
+
+#mekanisme .title {
+  font-size: 48px;
+  color: #ffffff;
+  font-weight: 800;
+}
+
+/* mekanisme */
+#mekanisme img {
+  height: 54px;
+  width: 55px;
+}
+
+#mekanisme h4 {
+  color: #007cbd;
+  font-size: 18px;
+  font-weight: 600;
+}
+#mekanisme .date {
+  color: #007cbd;
+  font-size: 14px;
+  font-weight: 400;
+}
+#mekanisme ol {
+  color: #1b1e28;
+  font-size: 12px;
+  font-weight: 400;
+  padding-left: 15px;
+}
+#mekanisme .mekanisme-wave-atas {
+  background-image: url("../image/mekanisme-wave-1.png");
+  height: 637px;
+  width: 100%;
+  background-repeat: no-repeat;
+  background-position-y: -20px;
+  background-position-x: -90px;
+  position: absolute;
+  top: 0px;
+  right: 0;
+  left: 0;
+}
+
+#mekanisme .mekanisme-wave-bawah {
+  background-image: url("../image/mekanisme-wave2.png");
+  height: 637px;
+  width: 100%;
+  background-repeat: no-repeat;
+  background-position-y: 500px;
+  background-position-x: -90px;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  left: 0;
+}
+
+/* sponsor */
+#sponsor {
+  background-color: #f4fbff;
+  padding-bottom: 30px;
+  padding-top: 80px;
+}
+#sponsor h3 {
+  color: #007cbd;
+  font-size: 18px;
+  font-weight: bold;
+  text-align: center;
+}
+#sponsor .bg-image {
+  background-color: white;
+  width: 291px;
+  height: 144px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-right: 60px;
+}
+
+#sponsor .scrolling-list-container {
+  overflow: hidden;
+  width: 100%;
+}
+#sponsor .scrolling-list {
+  display: flex;
+  animation: scroll-left 10s linear infinite;
+}
+#sponsor .scrolling-list image {
+  /* max-width: 100%;
+  max-height: 100%; */
+  margin-right: 50px;
+  padding: 60px;
+}
+
+@keyframes scroll-left {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-100%);
+  }
+}
+
+#sponsor .btndaftar {
+  background-color: #3eb7dd;
+  color: white;
+  font-size: 14px;
+  font-weight: 800px;
+  margin-top: 60px;
+}
+
+/* artikel */
+#article {
+  background-color: #f4fbff;
+  padding-top: 20px;
+}
+#article .card-article {
+  background-color: #f4fbff;
+}
+#article .section-title {
+  color: #007cbd;
+  font-size: 32px;
+  font-weight: bold;
+}
+
+#article .article-title {
+  font-size: 14px;
+  font-weight: bold;
+  margin-top: 20px;
+}
+#article .article-created {
+  font-size: 12px;
+  font-weight: 400;
+  color: #7a7b7e;
+}
+
+/* footer */
+footer {
+  background-color: #007cbd;
+  min-height: 244px;
+  color: white;
+  padding-left: 30px;
+  /* padding: 30px; */
+}
+footer span {
+  display: block;
+  line-height: 24px;
+}
+footer span.nb1 {
+  font-size: 15px;
+  font-weight: 600;
+  /* margin-top: 30px; */
+}
+footer span.nb2 {
+  font-size: 30px;
+  font-weight: bold;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+footer span.nb3 {
+  font-size: 13px;
+  font-weight: 500;
+  letter-spacing: 4px;
+}
+
+footer .footer-desc {
+  font-size: 14px;
+  font-weight: 600;
+  margin-top: 20px;
+}
+
+footer hr.footer-hr {
+  height: 10px;
+  border-color: white;
+}
+
+footer .copyright {
+  font-size: 10px !important;
+  font-weight: 200;
+}
+
+/* register */
+#hero-register {
+  background: linear-gradient(#2095e4, #3ec7f3);
+  padding: 100px;
+  position: relative;
+  font-family: "Montserrat", sans-serif;
+  height: 400px;
+  align-items: center;
+  justify-content: center;
+}
+
+#hero-register h1 {
+  font-size: 48px;
+  color: white;
+  font-weight: bold;
+  text-align: center;
+  margin-top: 80px;
+}
+
+.hero-register-wave-atas {
+  background-image: url("../image/mekanisme-wave-1.png");
+  height: 637px;
+  width: 100%;
+  background-repeat: no-repeat;
+  background-position-y: -30px;
+  background-position-x: -90px;
+  position: absolute;
+  top: 0px;
+  right: 0;
+  left: 0;
+}
+
+/* .hero-register-wave-bawah {
+  background-image: url("../image/mekanisme-wave2.png");
+  height: 637px;
+  width: 100%;
+  background-repeat: no-repeat;
+  background-position-y: 500px;
+  background-position-x: -90px;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  left: 0;
+} */
+
+#register {
+  background: linear-gradient(#f4fbff, #f4fbff) !important;
+}
+
+#register .card-register {
+  margin-top: -120px;
+  border: none !important;
+  margin-bottom: 120px;
+  border-radius: 16px;
+}
+
+#register .form-control {
+  border: 0.003 solid grey;
+}
+#register .form-group img {
+  margin-top: 60px;
+}
+
+#register .btnUploadFile {
+  background-color: #007cbd;
+  color: white;
+}
+#register .btnRegister {
+  background-color: #007cbd;
+  color: white;
+}
+/* mobile */
+@media only screen and (max-width: 767px) {
+  .navbar {
+    display: none;
+  }
+  #mekanisme {
+    padding: 0;
+    padding-bottom: 80px;
+  }
+  #mekanisme img {
+    margin-bottom: 30px;
+  }
+  #mekanisme .date {
+    text-align: left !important;
+    float: left;
+    margin-bottom: 10px;
+  }
+  #sponsor {
+    background-color: #f4fbff;
+    padding-bottom: 30px;
+    padding-top: 50px;
+    margin-top: -30px;
+  }
+  #hero .bg-wave-atas {
+    background-image: url("../image/wave.png");
+    height: 637px;
+    width: 100%;
+    background-repeat: no-repeat;
+    background-position-y: -78px;
+    background-position-x: -0px;
+    position: absolute;
+  }
+
+  #about h3 {
+    font-size: 20px;
+    font-weight: bold;
+    margin-top: 20px;
+    margin-bottom: 10px;
+    color: #007cbd;
+  }
+
+  #mekanisme .title {
+    margin-top: 40px;
+  }
+
+  #mekanisme .mekanisme-wave-atas {
+    background-image: url("../image/mekanisme-wave-1.png");
+    height: 637px;
+    width: 100%;
+    background-repeat: no-repeat;
+    background-position-y: -50px;
+    background-position-x: -220px;
+    position: absolute;
+    top: 0px;
+    right: 0;
+    left: 0;
+  }
+
+  #mekanisme .mekanisme-wave-bawah {
+    background-image: url("../image/mekanisme-wave2.png");
+    height: 637px;
+    width: 100%;
+    background-repeat: no-repeat;
+    background-position-y: 500px;
+    background-position-x: -160px;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    left: 0;
+  }
+
+  #sponsor .scrolling-list-container {
+    overflow: hidden;
+    width: 100%;
+  }
+  #sponsor .scrolling-list {
+    display: flex;
+    animation: scroll-left 10s linear infinite;
+  }
+  #sponsor .scrolling-list img {
+    /* padding: 60px; */
+    margin-right: 50px;
+    margin-left: 50px;
+    padding-right: 20px;
+    padding-left: 20px;
+    height: auto;
+  }
+
+  #sponsor .bg-image {
+    background-color: white;
+    width: 291px;
+    height: 144px;
+    justify-content: center;
+    align-items: center;
+  }
+
+  @keyframes scroll-left {
+    0% {
+      transform: translateX(0);
+    }
+    100% {
+      transform: translateX(-100%);
+    }
+  }
+
+  #article .section-title {
+    text-align: center;
+    font-size: 25px;
+  }
+  #article .card-article {
+    padding: 0px 10px;
+  }
+}
